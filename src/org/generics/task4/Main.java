@@ -1,6 +1,5 @@
 package org.generics.task4;
 
-import java.nio.channels.FileChannel;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -30,7 +29,7 @@ public class Main {
         System.out.print("Максимальное количество вхождений: ");
         for (Map.Entry<Character, Integer> symbol: symbols.entrySet()) {
             if (Objects.equals(symbol.getValue(), max)) {
-                System.out.print(symbol.getKey() + " : " + symbol.getValue() + " ");
+                System.out.print(" [ " + symbol.getKey() + " : " + symbol.getValue() + " ] ");
 
             }
         }
@@ -39,7 +38,7 @@ public class Main {
         System.out.print("Минимальное количество вхождений: ");
         for (Map.Entry<Character, Integer> symbol: symbols.entrySet()) {
             if (Objects.equals(symbol.getValue(), min)) {
-                System.out.print(symbol.getKey() + " : " + symbol.getValue() + " ");
+                System.out.print(" [ " + symbol.getKey() + " : " + symbol.getValue() + " ] ");
             }
         }
             }
